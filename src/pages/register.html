@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+  </head>
+  <body class="bg-gray-100">
+
+    <div class="min-h-screen flex justify-center items-center">
+      <div class="bg-white w-1/3 p-6 rounded-lg shadow-lg">
+        <form id="register-form">
+          <legend class="font-bold text-xl mb-8">Registrate</legend>
+
+          <div class="mb-3">
+            <label class="block text-gray-700 font-bold" for="name">Nombre</label>
+            <input class="w-full mt-2 border-gray-300 p-2 border rounded" name="Nombre" type="text" id="name" placeholder="Nombre">
+          </div>
+    
+          <div class="mb-3">
+            <label class="block text-gray-700 font-bold" for="phone">Celular</label>
+            <input class="w-full mt-2 border-gray-300 p-2 border rounded" name="Celular" type="number" id="phone" placeholder="Número de celular">
+          </div>
+    
+          <div class="mb-3">
+            <label class="block text-gray-700 font-bold" for="password">Password</label>
+            <input class="w-full mt-2 border-gray-300 p-2 border rounded" type="password" name="Password" id="password" placeholder="Password">
+          </div>
+
+          <div class="mb-3">
+            <label class="block text-gray-700 font-bold" for="image">Imágen de perfil</label>
+            <input class="w-full mt-2 border-gray-300 p-2 border rounded" name="Imágen de perfil" type="text" id="image" placeholder="Url de img de perfil">
+          </div>
+
+          <div class="mb-3">
+            <label class="block text-gray-700 font-bold" for="info">Frase o info de perfil</label>
+            <input class="w-full mt-2 border-gray-300 p-2 border rounded" name="Info de perfil" type="text" id="info" placeholder="Frase o info de perfil">
+          </div>
+    
+          <div>
+            <div class="flex flex-col gap-3">
+              <input class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" type="submit" value="Registrate">
+            </div>
+            <div class="mt-4 md:flex items-center justify-between">
+              <a class="text-blue-500" href="/">Ya tienes cuenta? Inicia sesión</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/services/authServices.ts"></script>
+  </body>
+</html>
